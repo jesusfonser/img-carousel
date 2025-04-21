@@ -10,6 +10,13 @@ izqda.addEventListener("click", () => arrow(-1));
 
 let index = 0;
 
+bolitas.forEach((x, ind) =>{
+    x.addEventListener("click", () =>{
+        index = ind
+        selectImg(index);
+    })
+});
+
 function selectImg(i){
     imgs.forEach((x) => {
         x.style.display = "none";
