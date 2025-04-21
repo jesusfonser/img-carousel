@@ -38,3 +38,4 @@ function arrow(dir){
 }
 
 selectImg(index);
+setInterval(()=>arrow(1), 5000);
