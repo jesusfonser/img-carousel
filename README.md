@@ -1,2 +1,3 @@
-# dropdown-menu
-Tarea de The Odin Project en la que se nos pide hacer dropdown menus. Parte del módulo JavaScript.
+# img-carousel
+
+Tarea de The Odin Project en la que se debe hacer un carrusel de imágenes. Para el módulo JavaScript.
