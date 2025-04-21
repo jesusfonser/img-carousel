@@ -1,14 +1,26 @@
 import "./style.css";
 
 const imgs = Array.from(document.querySelectorAll(".container"));
-const body = document.querySelector("body");
+const bolitas = Array.from(document.querySelectorAll(".bolita"));
+const derecha = document.getElementById("droite");
+const izqda = document.getElementById("gauche");
+
+derecha.addEventListener("click", () => arrow(1));
+izqda.addEventListener("click", () => arrow(-1));
+
 let index = 0;
 
 function selectImg(i){
     imgs.forEach((x) => {
         x.style.display = "none";
-    })    
+    })
+    
+    bolitas.forEach((x) =>{
+        x.style.color = "rgb(119, 235, 220)";
+    })
+    
     imgs[i].style.display = "block";
+    bolitas[i].style.color = "blue";
 }
 
 function arrow(dir){
@@ -19,15 +31,3 @@ function arrow(dir){
 }
 
 selectImg(index);
-
-const buttonAlante = document.createElement("button");
-const buttonAtras = document.createElement("button");
-
-buttonAlante.innerText = "P'alante";
-buttonAtras.innerText = "P'atras";
-
-buttonAlante.addEventListener("click", () => arrow(1));
-buttonAtras.addEventListener("click", () => arrow(-1));
-
-body.appendChild(buttonAlante);
-body.appendChild(buttonAtras);

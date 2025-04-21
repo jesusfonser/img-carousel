@@ -11,6 +11,19 @@ img{
     width: 450px;
 }
 
+#droite, #gauche{
+    position: absolute;
+    width: 60px;
+}
+
+#droite{
+    left: 90%;
+}
+
+#gauche{
+    right: 90%;
+}
+
 #picture-frame{
     display: flex;
     align-items: center;
@@ -18,8 +31,26 @@ img{
     width: 500px;
     height: 350px;
     background-color: red;
+    position: relative;
 }
 
 .container{
     display: none;
+}
+
+#bolitas{
+    position: absolute;
+    top: 75%;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    margin: 0px;
+    color: rgb(119, 235, 220);
+    display: inline;
+    font-size: 50px;
 }
